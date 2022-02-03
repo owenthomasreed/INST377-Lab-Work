@@ -1,45 +1,91 @@
-YOUR NAME Lab 2: CSS Selectors
+<html>
+    <head>
+        <link rel='stylesheet' href='styles.css'/>
+    </head>
 
-Selectors
-Main Page
-
-First, the basics.
-
-You need the following to build your website.
-
-HTML and CSS
-Javascript
-Node.js
-And other web development frameworks
-
-You should list your top 3 goals for the class below.
-
-Learn front-end web design
-Learn new programming languages
-Learn how to work with others in a technical space
-Learn popular web dev frameworks
-
-Let's Try Some Inline Elements
-
-Sometimes you want to draw attention to something in a line of text.
-
-Sometimes you want to strongly emphasize something in the text.
-
-Sometimes you want to do both.
-
-Empty Elements
-
-Soft line breaks can't wrap anything. Neither can image tags, or hard lines.
-Add a hard line under here, and make sure you've used some soft line breaks to match your page to the sample.
-
-Images 
-Don't forget to use alt text on your images. It's important for accessibility.
-If you build this page right, your images will form a small "carousel"
-
-onigiri_1
-onigiri_2
-onigiri_3
-onigiri_4
-
-Include a hyperlink here to your github repository for class.
-If you want your repo to be private, be sure to invite Prof A as a "collaborator."
+    <body>
+        <div class="wrapper container">
+            <div class='header'><strong>Owen Reed Lab 2: CSS Selectors</strong></div>
+        
+            <nav>
+                <a href='selectors.html'>Selectors</a>
+                <a href='index.html'>Main Page</a>
+            </nav>
+            
+            
+            <div class='subtitle default'>
+                <strong>First, the basics.</strong>
+            </div>
+            
+            <div>
+                You need the following to build your website.
+            </div>
+            
+            <div class='section_1'>
+                <ul>
+                    <li>HTML and CSS</li>
+                    <li>Javascript</li>
+                    <li>Node.js</li>
+                    <li>And other web development frameworks</li>
+                </ul>
+                
+                <p>
+                    You should list your top 3 goals for the class below.
+                </p>
+                
+                <ol>
+                    <li>Learn front-end web design</li>
+                    <li>Learn new programming languages</li>
+                    <li>Learn how to work with others in a technical space</li>
+                    <li>Learn popular web dev frameworks</li>
+                </ol>
+                
+            </div>
+            
+            <div class='section_2'>
+                <strong>Let's Try Some Inline Elements</strong>
+            
+                <div class='subtitle'>
+                    <p>Sometimes you want to <em>draw attention</em> to something in a line of text.</p>
+                
+                    <p>Sometimes you want to <strong>strongly emphasize something</strong> in the text.</p>
+                    
+                    <p>Sometimes you want to <strong><em>do both.</em></strong></p>
+                </div>
+            </div>
+            
+            <div>
+                <strong>Empty Elements</strong>
+            
+                <p>Soft line breaks can't wrap anything. <br>Neither can image tags, or hard lines. <br>
+                Add a hard line under here, and make sure you've used some soft line breaks to match your page to the sample.</p>
+                <hr/>
+            </div>
+            
+            <div class='section_4'>
+                <div class='default text div.text'>
+                    <p><strong>Images</strong></p>
+                    <p>Don't forget to use alt text on your images. It's important for accessibility.</p>
+                    <p>If you build this page right, your images will form a small "carousel"</p>
+                </div>
+                
+                <div class='ul div.right grid img'>
+                    
+                    <img src='images/mochi.jpg' alt='A mochi ball in a bubble'/>
+                    <img src='images/mochi.gif' alt='A dancing mochi ball'/>
+                    <img src='images/mochi.png' alt='A mochi ball'/>
+                    <img src='images/mochi.svg' alt='A mochi ball with Bezier handles'/>
+                    
+                </div>
+            </div>
+            
+            <div>
+                <hr/>
+                <p><a href='https://github.com/owenthomasreed/INST377-Lab-Work'>Include a hyperlink here to your github repository for class.</a></p>
+                <p>If you want your repo to be private, be sure to invite Prof A as a "collaborator."</p>
+            </div>
+            
+        </div>
+    </body>
+    
+</html>
