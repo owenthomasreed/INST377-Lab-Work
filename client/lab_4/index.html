@@ -1,19 +1,61 @@
-YOUR NAME Lab 4: HTML Forms
+<head>
+    <link rel='stylesheet' href='styles.css'/>
+</head>
 
-today's date
-Database Demos
-Main Page
+<body>
+    <div class='header'>
+        <Strong>Owen Reed Lab 4: Browser Events & Selectors</Strong>
+    </div>
 
-Group Project Link (no site yet)
-Awesome Logo
-Github Link
+    <div class='menu-container'>
+        <div class='menu'>
+            <div class='date'>Feb 13, 2022</div>
+            <div class='links'>
+                <div class='demos'><a href='data.html'>Database Demos</a></div>
+                <div class='mainpage'><a href='https://glacial-chamber-91243.herokuapp.com/lab_4/'>Main Page</a></div>
+            </div>
+        </div>
+    </div>
 
-image_1
-image_2
-image_3
-image_4
-image_5
+    <div class='header2-container'>
+        <div class='header2'>
+          <div class='group'><a href='https://glacial-chamber-91243.herokuapp.com/lab_4/'>Group Project Link (no site yet)</a></div>
+          <div class='logo'><img src='images/awesome-logo.svg'/></div>
+          <div class='github'><a href='https://github.com/owenthomasreed/INST377-Lab-Work'>My Github</a></div>
+        </div>
+    </div>
 
-footer item 1
-footer item 2
-footer item 3
+    <div class='photo-grid-container'>
+        <div class="photo-grid-actions">
+            <button id="photo-grid-prev">Prev</button>
+        </div>
+
+          <div class='photo-grid-item photo-grid-item--visible'>
+            <img src='images/one.svg'/>
+          </div>
+          <div class='photo-grid-item photo-grid-item--hidden'>
+            <img src='images/two.svg'/>
+          </div>
+          <div class='photo-grid-item photo-grid-item--hidden'>
+            <img src='images/three.svg'/>
+          </div>
+          <div class='photo-grid-item photo-grid-item--hidden'>
+            <img src='images/four.svg'/>
+          </div>
+          <div class='photo-grid-item photo-grid-item--hidden'>
+            <img src='images/five.svg'/>
+          </div>
+
+        <div class="photo-grid-actions">
+            <button id="photo-grid-next">Next</button>
+        </div>
+    </div> 
+
+    <div class='footer'>
+        <div class='footer-item footer-one'>footer item 1</div>
+        <div class='footer-item footer-two'>footer item 2</div>
+        <div class='footer-item footer-three'>footer item 3</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
