@@ -8,13 +8,24 @@ function getRandomIntInclusive(min, max) {
 
 function dataHandler(dataArray) {
   console.log('fired dataHandler');
-  console.table(dataArray); // this is called "dot notation"
+  // console.table(dataArray); // this is called "dot notation"
   const range = [...Array(15).keys()];
   const listItems = range.map((item, index) => {
     const restNum = getRandomIntInclusive(0, dataArray.length - 1);
     return dataArray[restNum];
   });
   return listItems;
+}
+
+function createHtmlList(collection) {
+  const targetList = document.querySelector('.resto-list');
+  targetList.innerHtml = '';
+  collection.forEach((item) => {
+    const {name} = item;
+    const displayName = name.toLowerCase();
+    const injectThisItem = `<li>${displayName}</li>`;
+    targetList.innerHtml += injectThisItem;
+  });
 }
 
 // As the last step of your lab, hook this up to index.html
@@ -35,6 +46,7 @@ async function mainEvent() { // the async keyword means we can make API requests
       // arrayFromJson.data - we're accessing a key called 'data' on the returned object
       // it contains all 1,000 records we need
       const restoArray = dataHandler(arrayFromJson);
+      createHtmlList(restoArray);
     });
   }
 }
